@@ -1,0 +1,9 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+    <ul>{% for post in posts %}
+        <li><b>Title:</b> {{post.title}} <b>Body:</b> {{post.body}}</li>
+        
+
+{% endfor %} </ul>
+{% endblock %}

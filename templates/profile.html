@@ -1,0 +1,10 @@
+{% extends "layout.html"%}
+
+{% block content %}
+ <h1>HELLOOO welcome {{current_user.email}}</h1>
+
+<a href="{{url_for('posts')}}">See Posts</a>
+<a href="{{url_for('createpost')}}">Create a Post</a>
+
+ <a href="{{url_for('logout')}}">Log Out</a>
+{% endblock %}
